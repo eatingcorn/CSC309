@@ -172,3 +172,57 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
+.finalize-event-btn {
+  background-color: #333;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  margin-bottom: 20px;
+}
+
+.red-event{
+  background-color: red;
+}
+
+.blue-event{
+  background-color: lightblue;
+}
+
+.input-container {
+  background-color: lightgrey;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#meetingNameInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center; 
+  background-color: transparent;
+  display: block;
+}
+
+#meetingNameInput::placeholder {
+  color: #aaa;
+}
+
+.garbage-icon {
+  margin-left: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px; 
+}
