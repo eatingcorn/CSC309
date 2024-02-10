@@ -16,10 +16,20 @@
     </header>
     <div class="heading">
         <div class="input-container">
-            <input type="text" id="meetingNameInput" placeholder="Enter meeting name">
+            <input type="text" id="meetingNameInput" placeholder="Meeting 1">
             <div class="garbage-icon">&#128465;</div>
           </div>
           
+          <div class="table-status">
+            <p>0/4</p>
+            <div class="status-box"></div>
+            <div class="status-box blue-event1" ></div>
+            <div class="status-box blue-event2"></div>
+            <div class="status-box blue-event3"></div>
+            <div class="status-box blue-event4"></div>
+            <p>4/4</p>
+          </div>
+
         <table>
           <tr>
             <th></th>
@@ -31,10 +41,10 @@
           </tr>
           <tr>
             <td>9:00 AM</td>
-            <td rowspan="4" class="blue-event"></td>
+            <td rowspan="4" class="blue-event1"><p>Angad</p></td>
             <td></td>
             <td></td>
-            <td rowspan="10" class="blue-event"></td>
+            <td rowspan="10" class="blue-event2"><p>Ashkan<br>Angad</p></td>
             <td></td>
           </tr>
           <tr>
@@ -58,8 +68,8 @@
           <tr>
             <td>11:00 AM</td>
             <td></td>
-            <td rowspan="2" class="red-event"></td>
-            <td rowspan="10" class="blue-event"></td>
+            <td rowspan="2" class="blue-event3"><p>Ashkan<br>Harvir<br>Ricky</p></td>
+            <td rowspan="10" class="blue-event1"><p>Ricky</p></td>
             <td></td>
           </tr>
           <tr>
@@ -70,7 +80,7 @@
           <tr>
             <td>12:00 PM</td>
             <td></td>
-            <td rowspan="2" class="red-event"></td>
+            <td rowspan="2" class="blue-event1"><p>Harvir</p></td>
             <td></td>
           </tr>
           <tr>
@@ -81,7 +91,7 @@
           <tr>
             <td>1:00 PM</td>
             <td></td>
-            <td rowspan="2" class="red-event"></td>
+            <td rowspan="2" class="blue-event4"><p>Ashkan<br>Angad<br>Harvir<br>Ricky</p></td>
             <td></td>
           </tr>
           <tr>
@@ -142,7 +152,7 @@
             <td></td>
           </tr>
         </table>
-        <button class="finalize-event-btn">Create Event</button>
+        <button class="finalize-event-btn">Done</button>
     </div>
     <div class="main">
         

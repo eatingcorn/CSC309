@@ -78,6 +78,7 @@ table {
   min-width: 60%;
   display: inline-table;
   border-collapse: collapse;
+  margin-left: 170px;
 }
 
 th,
@@ -186,12 +187,24 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.red-event{
-  background-color: red;
+.grey-event{
+  background-color: lightgrey;
 }
 
-.blue-event{
-  background-color: lightblue;
+.blue-event1 {
+  background-color: rgb(204, 226, 233);
+}
+
+.blue-event2 {
+  background-color: lightblue; 
+}
+
+.blue-event3 {
+  background-color: rgb(99, 202, 237); 
+}
+
+.blue-event4 {
+  background-color: #3675eb; 
 }
 
 .input-container {
@@ -210,13 +223,15 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  text-align: center; 
+  text-align: left; 
   background-color: transparent;
   display: block;
+  font-size: 16px;
+  margin: auto;
 }
 
 #meetingNameInput::placeholder {
-  color: #aaa;
+  color: black;
 }
 
 .garbage-icon {
@@ -225,4 +240,33 @@ button:hover {
   cursor: pointer;
   font-size: 18px;
   margin-right: 10px; 
+}
+
+
+
+.sidebar {
+  position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.table-status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 60%; /* Adjust width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.status-box {
+  width: calc(25% - 5px); /* Adjust width based on the number of columns */
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 20px;
 }
