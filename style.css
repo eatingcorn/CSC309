@@ -75,7 +75,7 @@ nav .account {
 }
 
 table {
-  min-width: 60%;
+  min-width: 50%;
   display: inline-table;
   border-collapse: collapse;
   margin-left: 170px;
@@ -246,7 +246,7 @@ button:hover {
 
 .sidebar {
   position: fixed;
-    left: 25px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     background-color: #fff;
@@ -269,4 +269,20 @@ button:hover {
   border: 1px solid #333;
   text-align: center;
   line-height: 20px;
+}
+
+.meeting-done-btn {
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.meeting-done-btn:hover {
+  background-color: #75999f;
 }
