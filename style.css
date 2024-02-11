@@ -80,6 +80,9 @@ table {
   border-collapse: collapse;
   margin-left: auto;
 }
+.table-edit-week{
+  margin-left: 170px;
+}
 
 th,
 td {
@@ -233,13 +236,8 @@ button:hover {
 #meetingNameInput::placeholder {
   color: black;
 }
-
-.garbage-icon {
-  margin-left: 10px;
-  color: black;
-  cursor: pointer;
-  font-size: 18px;
-  margin-right: 10px; 
+.green{
+  color:chartreuse ;
 }
 
 
@@ -312,20 +310,31 @@ button:hover {
 /* Add this style to make all paragraphs inside the Legend div smaller */
 .Legend p {
   font-size: 12px; /* Adjust the font size as needed */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
 @media only screen and (max-width: 600px) {
-  /* Adjust the max-width value as needed for your specific layout */
 
-  /* Move the sidebar on top of the table */
   .sidebar {
-    position: static;
-    transform: none;
-    margin-bottom: 20px; /* Add margin to separate the sidebar and the table */
+    order: -1;
+    width: 50%;
+    top: 0;
+    transform: none !important;
+    margin-bottom: 20px;
+    position: relative !important; 
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .mobile-weekly-create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  table {
-    margin-left: 10px; /* Adjust margin as needed */
+  .table-edit-week {
+    margin-left: 0px; /* Adjust margin as needed */
   }
+  
 }
