@@ -78,7 +78,7 @@ table {
   min-width: 50%;
   display: inline-table;
   border-collapse: collapse;
-  margin-left: 170px;
+  margin-left: auto;
 }
 
 th,
@@ -285,4 +285,47 @@ button:hover {
 
 .meeting-done-btn:hover {
   background-color: #75999f;
+}
+
+.Legend {
+  font-size: 14px;
+  border: 1px solid #ccc; /* Adjust border properties as needed */
+  padding: 10px;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+/* Add this style to make the legend heading smaller */
+.Legend h1 {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Add this style to make the table inside the Legend div smaller */
+.Legend table {
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+/* Add this style to make all paragraphs inside the Legend div smaller */
+.Legend p {
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Adjust the max-width value as needed for your specific layout */
+
+  /* Move the sidebar on top of the table */
+  .sidebar {
+    position: static;
+    transform: none;
+    margin-bottom: 20px; /* Add margin to separate the sidebar and the table */
+  }
+
+  table {
+    margin-left: 10px; /* Adjust margin as needed */
+  }
 }
