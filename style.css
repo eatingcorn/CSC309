@@ -318,7 +318,6 @@ button:hover {
 @media only screen and (max-width: 600px) {
 
   .sidebar {
-    order: -1;
     width: 50%;
     top: 0;
     transform: none !important;
@@ -332,7 +331,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
-
+  .Legend{
+    max-width: 100%;
+  }
   .table-edit-week {
     margin-left: 0px; /* Adjust margin as needed */
   }
